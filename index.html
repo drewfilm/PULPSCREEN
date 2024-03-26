@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PULPSCREEN - Film Production and Finance</title>
+<title>PULPSCREEN - Film Production & Finance</title>
 <style>
   body, html {
     height: 100%;
@@ -12,43 +12,64 @@
   }
   .bg-image {
     background-image: url('images/Pulpscreen Background.jpg');
-    filter: brightness(40%);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    text-align: center;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 80% black overlay */
+    z-index: 1;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 100%;
   }
   .logo {
-    width: 50%;
-    max-width: 500px; /* Adjust as necessary for the logo's intrinsic size */
+    width: 70%;
+    max-width: 700px; /* Adjust as necessary for the logo's intrinsic size */
   }
   .header {
+    width: 70%; /* 70% of the parent element, which is .content */
     font-size: 20px; /* Adjust as needed */
     color: #fff;
+    font-weight: 300; /* Lighter font weight, adjust as needed */
     padding-top: 50pt;
+    margin: 0 auto; /* Center the header */
   }
   .contact-link {
     position: absolute;
     bottom: 50pt;
-    width: 100%;
+    left: 0;
+    right: 0;
     color: #FF853F;
     font-size: 20px; /* Adjust as needed */
     text-decoration: none;
+    z-index: 2;
   }
 </style>
 </head>
 <body>
 
 <div class="bg-image">
-  <img src="images/Asset 3@5x.png" alt="PulpScreen Logo" class="logo">
-  <h4 class="header">Film Production and Finance</h4>
-  <a href="mailto:info@pulpscreen.com" class="contact-link">Contact Us</a>
+  <div class="overlay"></div>
+  <div class="content">
+    <img src="images/Asset 3@5x.png" alt="PulpScreen Logo" class="logo">
+    <h4 class="header">Film Production and Finance</h4>
+    <a href="mailto:info@pulpscreen.com" class="contact-link">Contact Us</a>
+  </div>
 </div>
 
 </body>
