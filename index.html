@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PULPSCREEN - Film Production & Finance</title>
+<title>PULPSCREEN - Film Production and Finance</title>
 <style>
   body, html {
     height: 100%;
@@ -13,12 +13,14 @@
   }
   .bg-image {
     background-image: url('images/Pulpscreen Background.jpg');
+    filter: brightness(40%);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Prevents background from scrolling */
     position: relative;
+<<<<<<< HEAD
     text-align: center;
   }
   .overlay {
@@ -33,13 +35,16 @@
   .content {
     position: relative;
     z-index: 2;
+=======
+>>>>>>> parent of ed93af2 (tweaks, sizing, etc)
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    text-align: center;
   }
   .logo {
+<<<<<<< HEAD
     width: 70%;
     max-width: 700px;
   }
@@ -50,16 +55,23 @@
     font-weight: 300;
     padding-top: 50pt;
     margin: 0 auto;
+=======
+    width: 50%;
+    max-width: 500px; /* Adjust as necessary for the logo's intrinsic size */
+  }
+  .header {
+    font-size: 20px; /* Adjust as needed */
+    color: #fff;
+    padding-top: 50pt;
+>>>>>>> parent of ed93af2 (tweaks, sizing, etc)
   }
   .contact-link {
     position: absolute;
     bottom: 50pt;
-    left: 0;
-    right: 0;
+    width: 100%;
     color: #FF853F;
     font-size: 20px;
     text-decoration: none;
-    z-index: 2;
   }
   /* Footer Styles */
   .footer {
@@ -81,18 +93,9 @@
 <body>
 
 <div class="bg-image">
-  <div class="overlay"></div>
-  <div class="content">
-    <img src="images/Asset 3@5x.png" alt="PulpScreen Logo" class="logo">
-    <h4 class="header">Film Production and Finance</h4>
-    <a href="mailto:info@pulpscreen.com" class="contact-link">Contact Us</a>
-  </div>
-</div>
-
-<div class="footer">
-  <p>© PULPSCREEN 2024</p>
-  <p>Drew Langhart<br><span class="managing-partner">Managing Partner</span></p>
-  <p>Maxwell Almono<br><span class="managing-partner">Managing Partner</span></p>
+  <img src="images/Asset 3@5x.png" alt="PulpScreen Logo" class="logo">
+  <h4 class="header">Film Production and Finance</h4>
+  <a href="mailto:info@pulpscreen.com" class="contact-link">Contact Us</a>
 </div>
 
 </body>
